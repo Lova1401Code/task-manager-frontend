@@ -1,3 +1,3 @@
 export default function ExtendProfile() {
-    return <div className="bg-gray-100 p-4">ExtendProfile</div>
+    return <div className="my-4 bg-white p-4">ExtendProfile</div>
 }
