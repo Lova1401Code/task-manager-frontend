@@ -13,8 +13,8 @@ export default function Navigator() {
 
     }
     return <div className="bg-white flex flex-col my-4">
-            <div className="h-12 flex items-center justify-center">
-                <span className="text-white text-lg bg-blue-400 px-1 rounded">LG</span>
+            <div className="h-12 flex items-center justify-center my-2">
+                <span className="text-white text-lg bg-blue-400 px-1 r-2 rounded">VA</span>
             </div>
 
             <div className="flex-1 flex flex-col justify-between items-center py-14">
