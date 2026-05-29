@@ -23,23 +23,23 @@ export default function ExtensionBar() {
             </button>
             <div className="flex flex-col w-full gap-4 items-center">
                 <div className="w-full">
-                    <button className="flex items-center p-1" onClick={menuClick1}>
-                        <span className="text-gray-700 mr-2">{isOpen1 ? <ChevronDownMicorIcon/> : <ChevronUpMicroIcon/>}</span>
+                    <button className="text-[#9C9C9C] text-xs flex items-center p-1" onClick={menuClick1}>
+                        <span className="mr-2">{isOpen1 ? <ChevronDownMicorIcon/> : <ChevronUpMicroIcon/>}</span>
                         <span>Marketing</span>
                     </button>
 
                     {isOpen1 && (
                         <ul className="flex flex-col gap-0 ml-2 text-gray-600">
-                            <li className="flex items-center p-1 bg-[#EEF7FF] rounded">
-                                <span className="text-gray-700 mr-2"><FolderIcon /></span>
+                            <li className="text-sm flex items-center p-1 bg-[#EEF7FF] rounded">
+                                <span className="text-gray-700 mr-2"><FolderIcon menu="marketing" /></span>
                                 <span>Sub-item 1</span>
                             </li>
-                            <li className="flex items-center p-1">
-                                <span className="text-gray-700 mr-2"><FolderIcon /></span>
+                            <li className="text-sm flex items-center p-1">
+                                <span className="text-gray-700 mr-2"><FolderIcon menu="marketing" /></span>
                                 <span>Sub-item 1</span>
                             </li>
-                            <li className="flex items-center p-1">
-                                <span className="text-gray-700 mr-2"><FolderIcon /></span>
+                            <li className="text-sm flex items-center p-1">
+                                <span className="text-gray-700 mr-2"><FolderIcon menu="marketing" /></span>
                                 <span>Sub-item 1</span>
                             </li>
                         </ul>
@@ -47,23 +47,23 @@ export default function ExtensionBar() {
 
                 </div>
                 <div className="w-full">
-                    <button className="flex items-center" onClick={menuClick2}>
-                        <span className="text-gray-700 mr-3">{isOpen2 ? <ChevronDownMicorIcon/> : <ChevronUpMicroIcon/>}</span>
-                        <span>Marketing</span>
+                    <button className="text-[#9C9C9C] text-xs flex items-center" onClick={menuClick2}>
+                        <span className=" mr-3">{isOpen2 ? <ChevronDownMicorIcon/> : <ChevronUpMicroIcon/>}</span>
+                        <span>Products</span>
                     </button>
 
                     {isOpen2 && (
                         <ul className="flex flex-col gap-0 ml-2 text-gray-600">
-                            <li className="flex items-center p-1">
-                                <span className="text-gray-700 mr-2"><FolderIcon /></span>
+                            <li className="text-sm flex items-center p-1">
+                                <span className="text-gray-700 mr-2"><FolderIcon menu="products" /></span>
                                 <span>Sub-item 1</span>
                             </li>
-                            <li className="flex items-center p-1">
-                                <span className="text-gray-700 mr-2"><FolderIcon /></span>
+                            <li className="text-sm flex items-center p-1">
+                                <span className="text-gray-700 mr-2"><FolderIcon menu="products" /></span>
                                 <span>Sub-item 1</span>
                             </li>
-                            <li className="flex items-center p-1">
-                                <span className="text-gray-700 mr-2"><FolderIcon /></span>
+                            <li className="text-sm flex items-center p-1">
+                                <span className="text-gray-700 mr-2"><FolderIcon menu="products" /></span>
                                 <span>Sub-item 1</span>
                             </li>
                         </ul>
