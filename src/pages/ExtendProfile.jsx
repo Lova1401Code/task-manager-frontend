@@ -1,9 +1,12 @@
 import PhoneIcon from "../assets/icons/PhoneIcon"
 import VideoCameraIcon from "../assets/icons/VideoCameraIcon"
 import XIcon from "../assets/icons/XIcon"
+import profileImgUrl from "../assets/avatar.png"
+
+
 export default function ExtendProfile() {
     return (
-    <div className="relative my-4 bg-white p-2">
+    <div className="flex items-start relative my-4 bg-white p-2">
         <button className="p-1 absolute top-1 left-1">
             <XIcon />
         </button>
@@ -14,6 +17,13 @@ export default function ExtendProfile() {
             <button className="p-1">
                 <PhoneIcon />
             </button>
+        </div>
+        <div className="flex flex-col justify-center items-center mt-10 w-full">
+            <img src={ profileImgUrl } alt="Profile" className="w-32 h-auto rounded-full" />
+            <div className="text-center space-y-2 mt-4">
+                <h2 className="text-xl font-bold">Rober Fox</h2>
+                <h3 className="text-[#3BA1FF] text-sm font-semibold">@robertfox</h3>
+            </div>
         </div>
     </div>
     )
