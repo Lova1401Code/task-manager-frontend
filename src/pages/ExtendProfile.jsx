@@ -23,6 +23,8 @@ export default function ExtendProfile() {
             <div className="text-center space-y-2 mt-4">
                 <h2 className="text-xl font-bold">Rober Fox</h2>
                 <h3 className="text-[#3BA1FF] text-sm font-semibold">@robertfox</h3>
+                <p className="text-[#9C9C9C] text-xs text-justify px-6">Massa ornare ultrices nisi in vestibulum. Iaculis commodo amet orci sit non lacus. Odio dui aliquet vitae diam vel tellus feugiat aliquam eu.</p>
+                <button className="px-4 py-2 rounded-full border">iOS Developer</button>
             </div>
         </div>
     </div>
