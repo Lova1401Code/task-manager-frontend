@@ -2,6 +2,8 @@ import PhoneIcon from "../assets/icons/PhoneIcon"
 import VideoCameraIcon from "../assets/icons/VideoCameraIcon"
 import XIcon from "../assets/icons/XIcon"
 import profileImgUrl from "../assets/avatar.png"
+import AddFriendsIcon from "../assets/icons/AddFriendsIcon"
+import MessageIcon from "../assets/icons/MessageIcon"
 
 
 export default function ExtendProfile() {
@@ -25,6 +27,20 @@ export default function ExtendProfile() {
                 <h3 className="text-[#3BA1FF] text-sm font-semibold">@robertfox</h3>
                 <p className="text-[#9C9C9C] text-xs text-justify px-6">Massa ornare ultrices nisi in vestibulum. Iaculis commodo amet orci sit non lacus. Odio dui aliquet vitae diam vel tellus feugiat aliquam eu.</p>
                 <button className="px-2 py-1 text-sm rounded-full border border-[#9C9C9C] text-[#9C9C9C]">iOS Developer</button>
+            </div>
+            <div className="flex justify-center gap-2 flex-row my-6">
+                <button className="px-2 py-1 items-center justify-center font-semibold flex gap-1 text-sm">
+                    <AddFriendsIcon color="#3BA1FF" />
+                    <span>Add friends</span>
+                </button>
+                <button className="px-2 py-1 items-center justify-center font-semibold flex gap-1 text-sm">
+                    <MessageIcon color="#3BA1FF"/>
+                    <span>Message</span>
+                </button>
+                <button className="px-2 py-1 items-center justify-center font-semibold flex gap-1 text-sm">
+                    <PhoneIcon color="#3BA1FF" />
+                    <span>Call</span>
+                </button>
             </div>
         </div>
     </div>
