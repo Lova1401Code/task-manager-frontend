@@ -89,6 +89,14 @@ export default function ExtendProfile() {
             </div>
             <button className="text-xs text-[#9C9C9C] bg-[#FAFAFA] px-2 py-1 w-full mt-2">More</button>
         </div>
+        <hr className="w-full border-t border-[#E0E0E0]" />
+        <div className="flex w-full gap-2 text-[#9C9C9C] text-sm">
+                <span className=""><ChevronDownMicorIcon /></span>
+                <span>Message</span>
+        </div>
+        <div className="flex w-full"> 
+            <input type="text" placeholder="whrite a message" className="p-2 w-full text-sm text-[#C4C4C4] bg-[#FAFAFA]" />
+        </div>
     </div>
     )
 }
