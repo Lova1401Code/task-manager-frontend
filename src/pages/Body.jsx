@@ -1,6 +1,10 @@
 import profileUrl from '../assets/profile.png'
 import PlusIcon from '../assets/icons/PlusIcon'
 import SearchIcon from '../assets/icons/SearchIcon'
+import FilterIcon from '../assets/icons/FilterIcon'
+import ListIcon from '../assets/icons/LIstIcon'
+import TableIcon from '../assets/icons/TableIcon'
+import ViewColumnIcon from '../assets/icons/ViewColumnIcon'
 
 export default function Body() {
     return (
@@ -27,11 +31,25 @@ export default function Body() {
             <div className="bg-[#FAFAFA]">
                 <div className="flex justify-between items-center p-4">
                     <div className="flex justify-start items-center">
-                        <button className="text-xs bg-[#F0F0F0] px-2 py-1 rounded-full">Karban</button>
-                        <button className="text-xs px-2 py-1 rounded-full">Table</button>
-                        <button className="text-xs px-2 py-1 rounded-full">List view</button>
+                        <button className="flex items-center bg-[#F0F0F0] px-2 py-1 rounded-full">
+                            <span className="mr-1"><ViewColumnIcon /></span>
+                            <span className="text-xs">Karban</span>
+                        </button>
+                        <button className="flex items-center px-2 py-1 rounded-full">
+                            <span className="mr-1"><TableIcon /></span>
+                            <span className="text-xs">Table</span>
+                        </button>
+                        <button className="flex items-center px-2 py-1 rounded-full"> 
+                            <span className="mr-1"><ListIcon /></span>
+                            <span className="text-xs">List view</span>
+                        </button>
                     </div> 
-                    <div className="flex justify-end items-center"><button className="text-xs px-2 py-1 rounded-full">List view</button></div>
+                    <div className="flex justify-end items-center">
+                            <button className="flex px-2 py-1 rounded-full">
+                                <span className="mr-1"><FilterIcon /></span>
+                                <span className="text-xs">Filter</span>
+                            </button>
+                    </div>
                 </div>
             </div>
          </div>
