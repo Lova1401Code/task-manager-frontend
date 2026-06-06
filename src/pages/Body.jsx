@@ -96,11 +96,11 @@ export default function Body() {
                             <div className="flex justify-end gap-2">
                                 <div className="flex items-center gap-1"> 
                                     <span className=""><MessageIcon /></span>
-                                    <span className="text-sm text-[#3BA1FF]">1</span>
+                                    <span className="text-sm text-[#C4C4C4]">1</span>
                                 </div>
                                 <div className="flex items-center gap-1"> 
                                     <span className=""><PaperClipIcon /></span>
-                                    <span className="text-sm text-[#3BA1FF]">2</span>
+                                    <span className="text-sm text-[#C4C4C4]">2</span>
                                 </div>
                             </div>
                         </div>
