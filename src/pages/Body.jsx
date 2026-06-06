@@ -5,6 +5,7 @@ import FilterIcon from '../assets/icons/FilterIcon'
 import ListIcon from '../assets/icons/LIstIcon'
 import TableIcon from '../assets/icons/TableIcon'
 import ViewColumnIcon from '../assets/icons/ViewColumnIcon'
+import MarkIcon from '../assets/icons/MarkIcon'
 
 export default function Body() {
     return (
@@ -49,6 +50,19 @@ export default function Body() {
                                 <span className="mr-1"><FilterIcon /></span>
                                 <span className="text-xs">Filter</span>
                             </button>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+                    <div className="flex flex-col gap-4">
+                        <div className="flex justify-start items-center gap-1">
+                            <span className="mr-1"><MarkIcon /></span>
+                            <h2 className="text-md font-semibold">Pending</h2>
+                        </div>
+                        <button className="flex gap-1 items-center justify-center w-full bg-white px-2 py-1 rounded">
+                            <span className="mr-1"><PlusIcon /></span>
+                            <span className="text-sm">Add New</span>
+                        </button>
                     </div>
                 </div>
             </div>
