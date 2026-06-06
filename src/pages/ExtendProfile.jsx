@@ -12,7 +12,7 @@ import PaperClipIcon from "../assets/icons/PaperClipIcon"
 
 export default function ExtendProfile() {
     return (
-    <div className="flex flex-col gap-3 items-start relative my-4 bg-white p-2">
+    <div className="flex flex-col gap-3 items-start relative bg-white p-2">
         <button className="p-1 absolute top-1 left-1">
             <XIcon />
         </button>

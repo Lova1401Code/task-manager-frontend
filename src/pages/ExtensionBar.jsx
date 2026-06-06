@@ -16,7 +16,7 @@ export default function ExtensionBar() {
     };
 
     return (
-        <div className="flex flex-col w-full my-4 bg-white items-center p-2 gap-8">
+        <div className="flex flex-col w-full bg-white items-center p-2 gap-8">
             <button className="h-8  bg-[#FAFAFA] hover:bg-gray-200 rounded w-full px-2 my-2">
                 <span className="text-gray-700 font-bold mr-2">+</span>
                 New Project

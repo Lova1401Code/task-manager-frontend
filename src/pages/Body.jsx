@@ -4,7 +4,7 @@ import SearchIcon from '../assets/icons/SearchIcon'
 
 export default function Body() {
     return (
-        <div className="flex flex-col bg-white  my-4">
+        <div className="flex flex-col bg-white">
             <div className="flex  p-3 justify-between w-full items-center">
                 <div className="text-lg font-semibold">Marketing Plane W23</div>
                 <div className="flex justify-end items-center -space-x-4 gap-2">

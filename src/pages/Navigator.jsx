@@ -12,7 +12,7 @@ export default function Navigator() {
         setActiveIcon(nameIcon);
 
     }
-    return <div className="bg-white flex flex-col my-4">
+    return <div className="bg-white flex flex-col">
             <div className="h-12 flex items-center justify-center my-2">
                 <span className="text-white text-lg bg-blue-400 px-1 r-2 rounded">VA</span>
             </div>
