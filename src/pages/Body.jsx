@@ -7,6 +7,8 @@ import TableIcon from '../assets/icons/TableIcon'
 import ViewColumnIcon from '../assets/icons/ViewColumnIcon'
 import MarkIcon from '../assets/icons/MarkIcon'
 import CheckIcon from '../assets/icons/CheckIcon'
+import PaperClipIcon from '../assets/icons/PaperClipIcon'
+import MessageIcon from '../assets/icons/MessageIcon'
 
 export default function Body() {
     return (
@@ -14,9 +16,9 @@ export default function Body() {
             <div className="flex  p-3 justify-between w-full items-center">
                 <div className="text-lg font-semibold">Marketing Plane W23</div>
                 <div className="flex justify-end items-center -space-x-4 gap-2">
-                    <img src={profileUrl} alt="profile" className="w-8 h-auto rounded-full" />
-                    <img src={profileUrl} alt="profile" className="w-8 h-auto rounded-full" />
-                    <img src={profileUrl} alt="profile" className="w-8 h-auto rounded-full" />
+                    <img src={profileUrl} alt="profile" className="w-6 h-auto rounded-full" />
+                    <img src={profileUrl} alt="profile" className="w-6 h-auto rounded-full" />
+                    <img src={profileUrl} alt="profile" className="w-6 h-auto rounded-full" />
                     <div className="flex pl-4"><PlusIcon /></div>
                     <div className="flex pl-8"><SearchIcon /></div>
                 </div>
@@ -85,6 +87,23 @@ export default function Body() {
                                 <span className="text-sm">Task 1</span>
                             </li>
                         </ul>
+                        <div className="flex justify-between p-2 bg-white">
+                            <div className="flex justify-start -space-x-2">
+                                <img src={profileUrl} alt="profile" className="w-6 h-auto rounded-full" />
+                                <img src={profileUrl} alt="profile" className="w-6 h-auto rounded-full" />
+                                <img src={profileUrl} alt="profile" className="w-6 h-auto rounded-full" />   
+                            </div>
+                            <div className="flex justify-end gap-2">
+                                <div className="flex items-center gap-1"> 
+                                    <span className=""><MessageIcon /></span>
+                                    <span className="text-sm text-[#3BA1FF]">1</span>
+                                </div>
+                                <div className="flex items-center gap-1"> 
+                                    <span className=""><PaperClipIcon /></span>
+                                    <span className="text-sm text-[#3BA1FF]">2</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
