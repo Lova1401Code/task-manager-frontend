@@ -1,3 +1,5 @@
+
+import { useState } from 'react'
 import profileUrl from '../assets/profile.png'
 import PlusIcon from '../assets/icons/PlusIcon'
 import SearchIcon from '../assets/icons/SearchIcon'
@@ -9,8 +11,19 @@ import MarkIcon from '../assets/icons/MarkIcon'
 import CheckIcon from '../assets/icons/CheckIcon'
 import PaperClipIcon from '../assets/icons/PaperClipIcon'
 import MessageIcon from '../assets/icons/MessageIcon'
+import MenuItems from '../components/MenuItems'
 
 export default function Body() {
+    const [menu, setMenu] = useState("dashboard")
+
+    const menuItems = [
+        "dashboard",
+        "tasks",
+        "timelines",
+        "files",
+        "overview"
+    ]
+
     const tasks = [
         { id: 1, title: "Task 1" },
         { id: 2, title: "Task 2" }
@@ -21,6 +34,28 @@ export default function Body() {
         { id: 3, name: "Completed" },
         { id: 4, name: "On Hold" }
     ]
+
+    const clickMenuHandler = (menu) => {
+        setMenu(menu)
+    }
+
+    const renderMenu = () => {
+        switch(menu) {
+            case "dashboard":
+                return <div>Dashboard</div>
+            case "tasks":
+                return <div>Tasks</div>
+            case "timelines":
+                return <div>Timelines</div>
+            case "files":
+                return <div>Files</div>
+            case "overview":
+                return <div>Overview</div>
+            default:
+                return <div>Dashboard</div>
+        }
+    }
+
     return (
         <div className="flex flex-col bg-white">
             <div className="flex  p-3 justify-between w-full items-center">
@@ -34,12 +69,16 @@ export default function Body() {
                 </div>
             </div>
             <nav className="w-full pl-3 px-3 border-b-3 border-gray-100">
-                <ul className="flex gap-4 justify-start items-center w-full -mb-px">
-                    <li className="text-sm text-[#C4C4C4]">Dashboard</li>
-                    <li className="text-sm text-[#000000] font-semibold border-b-3 border-[#3BA1FF] py-1 px-2">Tasks</li>
-                    <li className="text-sm text-[#C4C4C4]">Timelines</li> 
-                    <li className="text-sm text-[#C4C4C4]">Files</li>
-                    <li className="text-sm text-[#C4C4C4]">Overview</li>
+                <ul className="flex gap-4 justify-start items-center w-full -mb-px"> 
+                    <MenuItems 
+                        menu={menu} 
+                        clickMenuHandles={ clickMenuHandler }
+                    />
+                    <li className="text-sm text-[#C4C4C4]" onClick={() => clickMenuHandler("dashboard")}>Dashboard</li>
+                    <li className="text-sm text-[#000000] font-semibold border-b-3 border-[#3BA1FF] py-1 px-2" onClick={() => clickMenuHandler("tasks")}>Tasks</li>
+                    <li className="text-sm text-[#C4C4C4]" onClick={() => clickMenuHandler("timelines")}>Timelines</li>
+                    <li className="text-sm text-[#C4C4C4]" onClick={() => clickMenuHandler("files")}>Files</li>
+                    <li className="text-sm text-[#C4C4C4]" onClick={() => clickMenuHandler("overview")}>Overview</li>
                 </ul>
             </nav>
             <div className="bg-[#FAFAFA]">
