@@ -14,14 +14,24 @@ import MessageIcon from '../assets/icons/MessageIcon'
 import MenuItems from '../components/MenuItems'
 
 export default function Body() {
-    const [menu, setMenu] = useState("dashboard")
+    const [menuActive, setMenuActive] = useState("Dashboard")
 
     const menuItems = [
-        "dashboard",
-        "tasks",
-        "timelines",
-        "files",
-        "overview"
+        {
+            id: 1, name: "Dashboard"
+        },
+        {
+            id: 2, name: "Tasks"
+        },
+        {
+            id: 3, name: "Timelines"
+        },
+        {
+            id: 4, name: "Files"
+        },
+        {
+            id: 5, name: "Overview"
+        }
     ]
 
     const tasks = [
@@ -36,20 +46,20 @@ export default function Body() {
     ]
 
     const clickMenuHandler = (menu) => {
-        setMenu(menu)
+        setMenuActive(menu)
     }
 
     const renderMenu = () => {
-        switch(menu) {
-            case "dashboard":
+        switch(menuActive) {
+            case "Dashboard":
                 return <div>Dashboard</div>
-            case "tasks":
+            case "Tasks":
                 return <div>Tasks</div>
-            case "timelines":
+            case "Timelines":
                 return <div>Timelines</div>
-            case "files":
+            case "Files":
                 return <div>Files</div>
-            case "overview":
+            case "Overview":
                 return <div>Overview</div>
             default:
                 return <div>Dashboard</div>
@@ -70,16 +80,12 @@ export default function Body() {
             </div>
             <nav className="w-full pl-3 px-3 border-b-3 border-gray-100">
                 <ul className="flex gap-4 justify-start items-center w-full -mb-px"> 
-                    <MenuItems 
-                        menu={menu} 
-                        clickMenuHandles={ clickMenuHandler }
-                    />
-                    <li className="text-sm text-[#C4C4C4]" onClick={() => clickMenuHandler("dashboard")}>Dashboard</li>
-                    <li className="text-sm text-[#000000] font-semibold border-b-3 border-[#3BA1FF] py-1 px-2" onClick={() => clickMenuHandler("tasks")}>Tasks</li>
-                    <li className="text-sm text-[#C4C4C4]" onClick={() => clickMenuHandler("timelines")}>Timelines</li>
-                    <li className="text-sm text-[#C4C4C4]" onClick={() => clickMenuHandler("files")}>Files</li>
-                    <li className="text-sm text-[#C4C4C4]" onClick={() => clickMenuHandler("overview")}>Overview</li>
-                </ul>
+                    { menuItems.map((item) => {  
+                        return ( 
+                         <MenuItems key={item.id} active={menuActive === item.name} menu={item.name} clickMenuHandles={clickMenuHandler}/>)
+                        }) 
+                    }
+               </ul>
             </nav>
             <div className="bg-[#FAFAFA]">
                 <div className="flex justify-between items-center p-4">
