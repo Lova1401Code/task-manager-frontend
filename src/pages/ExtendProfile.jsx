@@ -8,9 +8,11 @@ import ChevronDownMicorIcon from "../assets/icons/ChevronDownMicorIcon";
 import ChevronUpMicroIcon from "../assets/icons/ChevronUpMicroIcon";
 import littleProfileImgUrl from "../assets/profile.png"
 import PaperClipIcon from "../assets/icons/PaperClipIcon"
+import Tags from "../components/Tags"
 
 
 export default function ExtendProfile() {
+    const TagsList = ["Marketing Team", "UX/UI Design"]
     return (
     <div className="flex flex-col gap-3 items-start relative bg-white p-2">
         <button className="p-1 absolute top-1 left-1">
@@ -54,8 +56,7 @@ export default function ExtendProfile() {
                 <span>Teams</span>
             </div>
             <div className="flex gap-2">
-                <button className="rounded-full bg-[#3BA1FF] px-2 py-1 text-white text-xs">Marketing Team</button>
-                <button className="rounded-full bg-[#08BD51] px-2 py-1 text-white text-xs">UX/UI Design</button>
+                <Tags tags={TagsList} />
             </div>
         </div>
         <div className="flex w-full gap-2 text-[#9C9C9C] text-sm">
