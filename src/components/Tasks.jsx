@@ -9,6 +9,7 @@ import CheckIcon from '../assets/icons/CheckIcon'
 import PaperClipIcon from '../assets/icons/PaperClipIcon'
 import MessageIcon from '../assets/icons/MessageIcon'
 import profileUrl from '../assets/profile.png'
+import imageTaskUrl from '../assets/imageTask.png'
 
 export default function Tasks() {
 
@@ -82,6 +83,13 @@ export default function Tasks() {
                                 <span className="text-sm">Task 1</span>
                             </li>
                         </ul>
+                        <div className="flex gap-3 bg-white p-2">
+                            <img src={imageTaskUrl} alt="imageTask" className="w-5 h-auto" />
+                            <img src={imageTaskUrl} alt="imageTask" className="w-5 h-auto" />
+                            <img src={imageTaskUrl} alt="imageTask" className="w-5 h-auto" />
+                            <img src={imageTaskUrl} alt="imageTask" className="w-5 h-auto" />
+                            <img src={imageTaskUrl} alt="imageTask" className="w-5 h-auto" />
+                        </div>
                         <div className="flex justify-between p-2 bg-white">
                             <div className="flex justify-start -space-x-2">
                                 <img src={profileUrl} alt="profile" className="w-6 h-auto rounded-full" />
