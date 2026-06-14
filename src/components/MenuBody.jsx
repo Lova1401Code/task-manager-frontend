@@ -1,9 +1,10 @@
-import MenuItems from "./utils/menuItems.js"
+import menuList from '../utils/menuList'
+import MenuItems from '../components/MenuItems'
 
 export default function MenuBody(){
     return (
         <ul className="flex gap-4 justify-start items-center w-full -mb-px"> 
-            { menuItems.map((item) => {  
+            { menuList.map((item) => {  
                 return ( 
                     <MenuItems key={item.id} active={menuActive === item.name} menu={item.name} clickMenuHandles={clickMenuHandler}/>)
                 }) 

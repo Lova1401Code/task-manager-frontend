@@ -1,4 +1,4 @@
-export default menuItems = [
+const menuList = [
         {
             id: 1, name: "Dashboard"
         },
@@ -14,4 +14,6 @@ export default menuItems = [
         {
             id: 5, name: "Overview"
         }
-    ]
+]
+
+export default menuList

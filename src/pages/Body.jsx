@@ -2,30 +2,12 @@
 import { useState } from 'react'
 import profileUrl from '../assets/profile.png'
 import SearchIcon from '../assets/icons/SearchIcon'
-import MenuItems from '../components/MenuItems'
 import PlusIcon from '../assets/icons/PlusIcon'
 import Tasks from '../components/Tasks'
+import MenuBody from '../components/MenuBody'
 
 export default function Body() {
     const [menuActive, setMenuActive] = useState("Dashboard")
-
-    const menuItems = [
-        {
-            id: 1, name: "Dashboard"
-        },
-        {
-            id: 2, name: "Tasks"
-        },
-        {
-            id: 3, name: "Timelines"
-        },
-        {
-            id: 4, name: "Files"
-        },
-        {
-            id: 5, name: "Overview"
-        }
-    ]
 
     const clickMenuHandler = (menu) => {
         setMenuActive(menu)
@@ -61,13 +43,7 @@ export default function Body() {
                 </div>
             </div>
             <nav className="w-full pl-3 px-3 border-b-3 border-gray-100">
-                <ul className="flex gap-4 justify-start items-center w-full -mb-px"> 
-                    { menuItems.map((item) => {  
-                        return ( 
-                         <MenuItems key={item.id} active={menuActive === item.name} menu={item.name} clickMenuHandles={clickMenuHandler}/>)
-                        }) 
-                    }
-               </ul>
+                <MenuBody />
             </nav>
             <div className="bg-[#FAFAFA]">
                 { renderMenu() }
