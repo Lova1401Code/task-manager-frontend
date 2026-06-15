@@ -43,7 +43,7 @@ export default function Body() {
                 </div>
             </div>
             <nav className="w-full pl-3 px-3 border-b-3 border-gray-100">
-                <MenuBody />
+                <MenuBody menuActive={menuActive} clickMenuHandler={clickMenuHandler} />
             </nav>
             <div className="bg-[#FAFAFA]">
                 { renderMenu() }
