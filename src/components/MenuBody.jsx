@@ -6,7 +6,13 @@ export default function MenuBody({ menuActive, clickMenuHandler }){
         <ul className="flex gap-4 justify-start items-center w-full -mb-px"> 
             { menuList.map((item) => {  
                 return ( 
-                    <MenuItems key={item.id} active={menuActive === item.name} menu={item.name} clickMenuHandles={clickMenuHandler}/>)
+                    <MenuItems 
+                        key={item.id}
+                        id={item.id}
+                        active={menuActive === item.name}
+                        menu={item.name} 
+                        clickMenuHandles={clickMenuHandler}/>
+                    )
                 }) 
             }
         </ul>

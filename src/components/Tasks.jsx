@@ -10,6 +10,7 @@ import PaperClipIcon from '../assets/icons/PaperClipIcon'
 import MessageIcon from '../assets/icons/MessageIcon'
 import profileUrl from '../assets/profile.png'
 import imageTaskUrl from '../assets/imageTask.png'
+import Button from './Button'
 
 export default function Tasks() {
 
@@ -64,7 +65,7 @@ export default function Tasks() {
                         <div className="flex flex-col">
                         <div className="flex flex-col gap-2 p-2 bg-white">
                             <div className="flex gap-2">
-                                <button className="rounded-full bg-[#3BA1FF] px-2 py-1 text-white text-xs">Marketing Team</button>
+                                <Button name="Marketing Team" className="bg-[#3BA1FF] text-xs"  />
                                 <button className="rounded-full bg-[#08BD51] px-2 py-1 text-white text-xs">UX/UI Design</button>
                             </div>
                             <p className="text-sm">No tasks to display</p>
