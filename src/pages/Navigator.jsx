@@ -30,7 +30,8 @@ export default function Navigator() {
                             flex 
                             justify-center 
                             items-center  
-                            rounded`    
+                            rounded
+                            cursor-pointer`    
                         }
                         onClick={() => iconClick('Dashboard')}
                     >
@@ -45,7 +46,8 @@ export default function Navigator() {
                                 flex 
                                 justify-center 
                                 items-center  
-                                rounded`
+                                rounded
+                                cursor-pointer`
                            }
                         onClick={() => iconClick('Message')}
                     >
@@ -60,7 +62,8 @@ export default function Navigator() {
                                 flex 
                                 justify-center 
                                 items-center  
-                                rounded`
+                                rounded
+                                cursor-pointer`
                            }
                         onClick={() => iconClick('Task')}
                     >
@@ -75,7 +78,8 @@ export default function Navigator() {
                                 justify-center 
                                 items-center 
                                 bg-white/20 
-                                rounded`
+                                rounded
+                                cursor-pointer`
                            }
                         onClick={() => iconClick('Settings')}
                     >
@@ -90,7 +94,8 @@ export default function Navigator() {
                                 justify-center 
                                 items-center 
                                 bg-white/20 
-                                rounded`
+                                rounded
+                                cursor-pointer`
                            }
                         onClick={() => iconClick('Teams')}
                     >
@@ -105,7 +110,8 @@ export default function Navigator() {
                                 justify-center 
                                 items-center 
                                 bg-white/20 
-                                rounded`
+                                rounded
+                                cursor-pointer`
                            }
                         onClick={() => iconClick('Files')}
                     >
