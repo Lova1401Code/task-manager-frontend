@@ -30,15 +30,15 @@ export default function ExtensionBar() {
 
                     {isOpen1 && (
                         <ul className="flex flex-col gap-0 ml-2 text-gray-600">
-                            <li className="text-sm flex items-center p-1 bg-[#EEF7FF] rounded">
+                            <li className="cursor-pointer text-sm flex items-center p-1 bg-[#EEF7FF] rounded">
                                 <span className="text-gray-700 mr-2"><FolderIcon menu="marketing" /></span>
                                 <span>Sub-item 1</span>
                             </li>
-                            <li className="text-sm flex items-center p-1">
+                            <li className="cursor-pointer text-sm flex items-center p-1">
                                 <span className="text-gray-700 mr-2"><FolderIcon menu="marketing" /></span>
                                 <span>Sub-item 1</span>
                             </li>
-                            <li className="text-sm flex items-center p-1">
+                            <li className="cursor-pointer text-sm flex items-center p-1">
                                 <span className="text-gray-700 mr-2"><FolderIcon menu="marketing" /></span>
                                 <span>Sub-item 1</span>
                             </li>
@@ -54,15 +54,15 @@ export default function ExtensionBar() {
 
                     {isOpen2 && (
                         <ul className="flex flex-col gap-0 ml-2 text-gray-600">
-                            <li className="text-sm flex items-center p-1">
+                            <li className="cursor-pointer text-sm flex items-center p-1">
                                 <span className="text-gray-700 mr-2"><FolderIcon menu="products" /></span>
                                 <span>Sub-item 1</span>
                             </li>
-                            <li className="text-sm flex items-center p-1">
+                            <li className="cursor-pointer text-sm flex items-center p-1">
                                 <span className="text-gray-700 mr-2"><FolderIcon menu="products" /></span>
                                 <span>Sub-item 1</span>
                             </li>
-                            <li className="text-sm flex items-center p-1">
+                            <li className="cursor-pointer text-sm flex items-center p-1">
                                 <span className="text-gray-700 mr-2"><FolderIcon menu="products" /></span>
                                 <span>Sub-item 1</span>
                             </li>
