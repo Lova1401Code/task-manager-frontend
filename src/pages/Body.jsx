@@ -5,6 +5,7 @@ import SearchIcon from '../assets/icons/SearchIcon'
 import PlusIcon from '../assets/icons/PlusIcon'
 import Tasks from '../components/Tasks'
 import MenuBody from '../components/MenuBody'
+import DashboardProject from './DashboardProject'
 
 export default function Body() {
     const [menuActive, setMenuActive] = useState("Dashboard")
@@ -16,7 +17,7 @@ export default function Body() {
     const renderMenu = () => {
         switch(menuActive) {
             case "Dashboard":
-                return <div className="p-4">Dashboard</div>
+                return <div><DashboardProject/></div>
             case "Tasks":
                 return <div><Tasks /></div>
             case "Timelines":
