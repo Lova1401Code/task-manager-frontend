@@ -3,7 +3,8 @@ export default function StatisticProject(){
         stats: {
             total: {current: 14, previous: 150}, 
             progress: {current: 50, previous: 60},
-            completed: {current: 64, previous: 90}
+            completed: {current: 64, previous: 90},
+            onHold: {current: 75, previous: 41}
         },
         get(metric){
             return {
@@ -14,7 +15,9 @@ export default function StatisticProject(){
     } 
     return(
         <div className="flex justify-between py-4">
-            <p>Statistics here</p>
+            { Object.entries(dashboardDateProject.stats).map(([key,stat]) => (
+                <div className="border-1 border-[#9C9C9C] rounded p-4 bg-white" key={key}>statistic here {stat.current}</div>
+            )) }
         </div>
     )
 }
