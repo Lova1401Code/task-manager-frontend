@@ -1,5 +1,6 @@
 import HandRaisedIcon from "../assets/icons/HandRaisedIcon"
 import StatisticProject from "../components/StatisticProject"
+import ChartCard from "../components/ChartCard"
 export default function DashboardProject(){
     return (
             <div className="p-4">
@@ -12,7 +13,10 @@ export default function DashboardProject(){
                 </div>
                     <StatisticProject/>
                 <div>
+                <div>
 
+                </div>
+                  <ChartCard/>
                 </div>
             </div>
     )

@@ -1,13 +1,16 @@
 import PencilSquare from "../assets/icons/PenciSquare";
 import ArrowUp from "../assets/icons/ArrowUp";
+import Check from "../assets/icons/Check";
+import Clock from "../assets/icons/Clock";
+import Pause from "../assets/icons/Pause";
 
 export default function StatisticProject(){
     const dashboardDateProject = {
         stats: {
-            total: {name: "total", current: 14, previous: 150}, 
-            progress: {name: "progress", current: 50, previous: 60},
-            completed: {name: "completed", current: 64, previous: 90},
-            onHold: {name: "onHold", current: 75, previous: 41}
+            total: {name: "total", current: 14, previous: 150, icon: <PencilSquare />}, 
+            progress: {name: "progress", current: 50, previous: 60, icon: <Check />},
+            completed: {name: "completed", current: 64, previous: 90, icon: <Clock />},
+            onHold: {name: "onHold", current: 75, previous: 41, icon: <Pause />}
         },
         get(metric){
             return {
@@ -41,7 +44,7 @@ export default function StatisticProject(){
                                 </div>
                             </div>
                             <div className="flex items-center justify-center rounded-full bg-blue-100 text-blue-500 h-10 w-10">
-                                <PencilSquare />
+                                {stat.icon}
                             </div>
                         </div>
                     </div>
